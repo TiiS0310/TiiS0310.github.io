@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>JavaScript Exercises</title>
+    <script src="garage.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="garage.css">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <h1>WELCOME TO THE CAR GARAGE </h1>
+        </figure>
+    </header>
+    <div id="container">
+        <div class="slider-search">
+            <div class="slider-search-title">Your Car</div>
+            <form id="search-form">
+                <div class="col-xs-12">
+
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Make</p>
+                        <input type="text" id = "carmake"></input>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Model</p>
+                        <input type="text" id = "carmodel"></input>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Registration Number</p>
+                        <input type="text" id = "carreg"></input>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Type of service</p>
+                        <input type="text" id="typeofservice"></input>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Number of Faults</p>
+                        <input type="text" id = "faultno"></input>
+                    </div>
+
+                    </br>
+                    </br>
+                    <div class="col-sm-6 col-xs-12">
+
+                    <button type="button" id="check" onclick="checkin(carinfo)">Check In</button>
+                    <button type="button" id="checko" onclick="deletecontent(carinfo);checkout(carinfo)">Check Out</button>
+                    <button type="button" id="garagec" onclick="content(carinfo)">Garage Content</button>
+
+                </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </form>
+<div id = "content"></div>
+</body>

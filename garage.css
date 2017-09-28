@@ -1,0 +1,124 @@
+body {
+    background: rgb(130, 224, 218);
+    background-image: url(rr.png);
+    background-repeat: no-repeat;
+    background-position: top-left;
+    background-size: 400pt;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 50pt;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-left: 20%;
+    
+}
+
+#container{
+    margin-top: 5%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    font-weight: 700;
+ 
+}
+
+.slider-search-title{
+     text-align: center;
+    font-size: 30pt;
+    line-height: 45px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 8px 30px;
+    font-family: Arial;
+    border: 1pt solid black;
+    background-color: black;
+    color: white;
+}
+
+.slider-search label{
+    font-size: 18px;
+    margin: 2% 0;
+    width: 100%;
+}
+
+.slider-search{
+    margin: 42px auto 0;
+    max-width: 535px;
+    height: max-content;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.9);
+}
+
+.slider-search button{
+    font-size: 20px;
+    background-color: #000000;
+    color: #fff;
+    padding: 4px 35px;
+    border-radius: 10px;
+    margin-left: 35%;
+    border: none;
+    display: block;
+    -webkit-appearance: none;
+}
+
+
+
+ .col-md-6,.col-xs-12,{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 12px;
+    font-family: Arial;
+    font-weight: bold;
+
+ }
+
+ .col-xs-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 12px;
+    font-family: Arial;
+    font-weight: bold;
+ }
+ form{
+     display: block;
+     font-family: Arial;
+     font-weight: bold;
+ 
+ }
+
+ #checkout{
+     margin-top: 4%;
+     font-size: 20px;
+     background-color: #080807;
+     color: #fff;
+     padding: 4px 32px;
+     border-radius: 10px;
+     margin-left: 34%;
+     border: none;
+     display: block;
+     -webkit-appearance: none;
+ }
+
+ #garagec {
+    margin-top: 4%;
+    font-size: 20px;
+    background-color: #080807;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 10px;
+    margin-left: 34%;
+    border: none;
+    display: block;
+    -webkit-appearance: none;
+ }
