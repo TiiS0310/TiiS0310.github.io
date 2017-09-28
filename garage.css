@@ -3,7 +3,7 @@ body {
     background-image: url(rr.png);
     background-repeat: no-repeat;
     background-position: top-left;
-    background-size: 400pt;
+    background-size: 300pt;
 }
 
 h1 {
@@ -97,7 +97,7 @@ label {
  
  }
 
- #checkout{
+ #checko{
      margin-top: 4%;
      font-size: 20px;
      background-color: #080807;
@@ -121,4 +121,10 @@ label {
     border: none;
     display: block;
     -webkit-appearance: none;
+ }
+
+ #parag{
+     font-family: Arial;
+     margin-left: 5%; 
+   
  }

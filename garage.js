@@ -4,7 +4,8 @@ var carinfo = [
         "model": "",
         "regnum": "",
         "faultno": "",
-        "typeofservice": ""
+        "typeofservice": "",
+        "bill" : ""
 
 
     },
@@ -13,16 +14,14 @@ var carinfo = [
 function content(carinfo){
     for (let i = 0; i < carinfo.length; i++){
         for(let carData in carinfo[i]){
-            let H5 = document.createElement('P');
-             H5.setAttribute("id", "checko");
-            let add = document.createTextNode(carinfo[i][carData])
-            H5.appendChild(add);
-            let element = document.getElementById("checko");
-            element.appendChild(H5);
+            let H1 = document.createElement('h3')
+            H1.setAttribute("id", "parag")
+            H1.textContent = carinfo[i][carData];
+            document.getElementsByTagName('body')[0].appendChild(H1);
         }
     }
 }
-
+/* 
    function deletecontent(carinfo){
         for (let i = 0; i < carinfo.length; i++){
             for(let carData in carinfo[i]){
@@ -32,9 +31,7 @@ function content(carinfo){
                parent.removeChild(child);
     }
         }
-    }
-
-
+    } */
 
 function checkin(carinfo){
 var newcarinfo = {
@@ -42,7 +39,7 @@ var newcarinfo = {
     "model" : document.getElementById("carmodel").value,
     "regnum" : document.getElementById("carreg").value,
     "faultno": document.getElementById("faultno").value,
-    "typeofservice": document.getElementById("typeofservice").value
+    "typeofservice": document.getElementById("typeofservice").value,
 }
 
 carinfo.push(newcarinfo);
@@ -51,13 +48,31 @@ document.getElementById("carmodel").value = "";
 document.getElementById("carreg").value = "";
 document.getElementById("faultno").value = "";
 document.getElementById("typeofservice").value = "";
+document.getElementById("totalcost").value = "";
 }
 
 function checkout(carinfo){
     for (let j = 0; j< carinfo.length; j ++){
         if (carinfo[j].regnum == document.getElementById("carreg").value){
             carinfo.splice(j,1);
+        
+        
         }
     }
 }
 
+/* function calculatebill(carinfo){
+    var calcbill
+    for (let i = 0; i < carinfo.length; i++) {
+     if (carinfo[i].reg_no === document.getElementById('carreg').value){
+    if (carinfo[i].faultno == 0){
+        calcbill = 'No Bill! There are no faults.'
+    }
+    else {
+        calcbill = carinfo[i].faultno * 50;
+    }
+    document.getElementById("bill").innerHTML = carinfo[i][carData];
+    document.getElementById("bill").innerHTML = "The total bill is : " + calcbill; 
+}
+    }
+} */

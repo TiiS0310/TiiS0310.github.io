@@ -20,15 +20,15 @@
 
                     <div class="col-sm-6 col-xs-12">
                         <p>Make</p>
-                        <input type="text" id = "carmake"></input>
+                        <input type="text" id="carmake"></input>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <p>Model</p>
-                        <input type="text" id = "carmodel"></input>
+                        <input type="text" id="carmodel"></input>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <p>Registration Number</p>
-                        <input type="text" id = "carreg"></input>
+                        <input type="text" id="carreg"></input>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <p>Type of service</p>
@@ -36,23 +36,25 @@
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <p>Number of Faults</p>
-                        <input type="text" id = "faultno"></input>
+                        <input type="text" id="faultno"></input>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Total Cost</p>
+                        <input type="text" id="totalcost"></input>
                     </div>
 
                     </br>
                     </br>
                     <div class="col-sm-6 col-xs-12">
-
-                    <button type="button" id="check" onclick="checkin(carinfo)">Check In</button>
-                    <button type="button" id="checko" onclick="deletecontent(carinfo);checkout(carinfo)">Check Out</button>
-                    <button type="button" id="garagec" onclick="content(carinfo)">Garage Content</button>
-
+                        <button type="button" id="check" onclick="checkin(carinfo)">Check In</button>
+                        <button type="button" id="checko" onclick="checkout(carinfo)">Check Out</button>
+                        <button type="button" id="garagec" onclick="content(carinfo)">Garage Content</button>
+                    </div>
+                  
                 </div>
         </div>
     </div>
     </div>
-
-    </div>
     </form>
-<div id = "content"></div>
+    <p id = "bill"></p>
 </body>
